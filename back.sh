@@ -249,6 +249,7 @@ do_backup() {
             --exclude='var/cache/apt/archives/**' \
             --exclude='home/*/.cache/**' \
             --exclude='home/*/.vscode-server/**' \
+            --exclude='home/orangepi/backup-system/**' \
             / ${MOUNTDIR}/
     else
         msg "Skipping rsync since ${MOUNTDIR} is not a mount point"
